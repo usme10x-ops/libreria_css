@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liber: el conocimiento te hace libre</title>
+    <meta name="description" content="Liber, librería en línea">
+    <meta name="theme-color" content="#1B1A17">
+    <!-- Icono de la empresa en la pestaña del navegador -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23B3261E'/%3E%3Cpath d='M29 22H47V60H71L63 69L71 78H29Z' fill='%23F4EEE1'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="encabezado">
+        <div class="encabezado-barra">
+            
+            <!-- Logo de la empresa -->
+            <a href="#" aria-label="Liber, ir al inicio" class="logo">
+                <span aria-hidden="true">L</span>
+                <span aria-hidden="true" class="logo-cinta"></span>
+                <span aria-hidden="true">B</span>
+                <span aria-hidden="true">E</span>
+                <span aria-hidden="true">R</span>
+            </a>
+            
+            <audio autoplay loop hidden>
+                <source src="./bach_v1.1.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- Barra de búsqueda -->
+            <div role="search" class="busqueda">
+                <label for="busqueda" class="solo-lectores">Buscar libros por título o autor</label>
+                <input id="busqueda" type="search" placeholder="Busca por título o autor" autocomplete="off" class="busqueda-campo">
+                <button type="button" aria-label="Buscar" class="busqueda-boton"></button>
+            </div>
+
+            <!-- Menú -->
+            <nav aria-label="Navegación principal" class="menu-principal">
+                <a href="liber.html">Inicio</a>
+                <a href="sobre-nosotros.html">Sobre nosotros</a>
+                <a href="#" class="enlace-activo">Iniciar sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- INICIO LOGIN -->
+    <main class="login-contenedor">
+        <div class="login-tarjeta">
+            
+            <h1 class="login-titulo">Bienvenido a Liber</h1>
+            <p class="login-subtitulo">Ingresa a tu cuenta para continuar tu lectura.</p>
+
+            <form class="login-formulario">
+                <div>
+                    <label for="email" class="login-etiqueta">Correo electrónico</label>
+                    <input type="email" id="email" required placeholder="correo@ejemplo.com" class="login-campo">
+                </div>
+
+                <div>
+                    <div class="login-fila-etiqueta">
+                        <label for="password" class="login-etiqueta">Contraseña</label>
+                        <a href="#" class="login-enlace-olvido">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <input type="password" id="password" required placeholder="••••••••" class="login-campo">
+                </div>
+
+                <button type="submit" class="login-boton">Iniciar sesión</button>
+            </form>
+
+            <div class="login-registro">
+                <span>¿Aún no tienes cuenta?</span>
+                <a href="#">Regístrate gratis</a>
+            </div>
+            
+        </div>
+    </main>
+    <!-- FIN LOGIN -->
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="pie-contenido">
+            <div class="pie-columnas">
+                
+                <!-- Logo y Redes -->
+                <div class="pie-marca">
+                    <span role="img" aria-label="Liber" class="logo">
+                        <span aria-hidden="true">L</span>
+                        <span aria-hidden="true" class="logo-cinta"></span>
+                        <span aria-hidden="true">B</span>
+                        <span aria-hidden="true">E</span>
+                        <span aria-hidden="true">R</span>
+                    </span>
+                    
+                    <div class="redes">
+                        <a href="#" aria-label="Instagram" class="red-instagram"></a>
+                        <a href="#" aria-label="X" class="red-x"></a>
+                        <a href="#" aria-label="TikTok" class="red-tiktok"></a>
+                        <a href="#" aria-label="Facebook" class="red-facebook"></a>
+                    </div>
+                </div>
+
+                <nav aria-label="Comprar" class="pie-menu">
+                    <h2>Comprar</h2>
+                    <div class="pie-menu-enlaces">
+                        <a href="#">Lógica</a>
+                        <a href="#">Novelas rusas</a>
+                        <a href="#">Teatro y poesía</a>
+                        <a href="#">Filosofía</a>
+                    </div>
+                </nav>
+
+                <nav aria-label="Ayuda" class="pie-menu">
+                    <h2>Ayuda</h2>
+                    <div class="pie-menu-enlaces">
+                        <a href="#">Envíos</a>
+                        <a href="#">Devoluciones</a>
+                        <a href="#">Preguntas frecuentes</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                </nav>
+
+                <nav aria-label="Liber" class="pie-menu">
+                    <h2>Liber</h2>
+                    <div class="pie-menu-enlaces">
+                        <a href="#">Sobre Liber</a>
+                        <a href="#">Círculo Liber</a>
+                        <a href="#">Eventos</a>
+                        <a href="#">Bibliotecas y empresas</a>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="pie-legal">
+                <span>© 2026 Liber. Todos los derechos reservados.</span>
+                <div class="pie-legal-enlaces">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
