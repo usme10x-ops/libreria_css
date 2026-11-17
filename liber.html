@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liber: el conocimiento te hacelibre</title>
+<meta name="description" content="Liber, librería en línea">
+<meta name="theme-color" content="#1B1A17">
+<!-- Icono de la empresa en la pestaña del navegador -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23B3261E'/%3E%3Cpath d='M29 22H47V60H71L63 69L71 78H29Z' fill='%23F4EEE1'/%3E%3C/svg%3E">
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+
+
+<header class="encabezado">
+    <!-- Logo de la empresa. (La imagen del logo y las de las redes sociales, se agregaron con SVG en lugar de con una imagen en otra carpeta. Asi si se hace zoom, no se mirara borroso)-->
+    <div class="encabezado-barra">
+        <a href="#" aria-label="Liber" class="logo"><span aria-hidden="true">L</span><span aria-hidden="true" class="logo-cinta"></span><span aria-hidden="true">B</span><span aria-hidden="true">E</span><span aria-hidden="true">R</span></a>
+
+    <!-- barra de busqueda -->
+    <div role="search" class="busqueda">
+        <label for="busqueda" class="solo-lectores">Buscar libros por título o autor</label>
+        <input id="busqueda" type="search" placeholder="Busca por título o autor" autocomplete="off" class="busqueda-campo">
+      <button type="button" aria-label="Buscar" class="busqueda-boton"></button>
+    </div>
+    <!-- Menu: cuenta, favoritos, carrito -->
+    <nav aria-label="Cuenta" class="menu-cuenta">
+      <a href="#" class="icono-cuenta">Iniciar sesión</a>
+      <a href="#" class="icono-favoritos">Favoritos</a>
+      <a href="#" class="icono-carrito">Carrito (0)</a>
+      <span class="musica">
+            <audio controls autoplay loop title="Pausar o reanudar la música de fondo">
+                <source src="./assets/audio/bach_v1.2.mp3" type="audio/mpeg">
+            </audio>
+      </span>
+    </nav>
+    </div>
+    <nav aria-label="Navegación principal" class="menu-principal">
+        <a href="liber.html">Inicio</a>
+        <a href="sobre_nosotros.html">Sobre nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="productos.html">Servicios</a>
+        <a href="productos.html">Contáctanos</a>
+    </nav>
+</header>
+
+
+
+<main>
+    <!-- cambiar los 'h#' de las otras cosas en 'inicio' -->
+    <!-- HERO -->
+    <section aria-labelledby="hero-titulo" class="hero">
+
+        <!-- Video de fondo. autoplay solo funciona si está en silencio (muted);
+        playsinline evita que el iPhone lo abra a pantalla completa; aria-hidden lo oculta a lectores de pantalla (lo que usan las personas con problemas de vision o si se necesita obtener inforemacion con una AI, creo) porque es decorativo -->
+        <video autoplay muted loop playsinline poster="./assets/img/hero-poster.jpg" aria-hidden="true" class="hero-video">
+            <source src="./assets/video/hero-libros.mp4" type="video/mp4">
+        </video>
+
+        <!-- Velo oscuro (encima del video, debajo del texto) -->
+        <div aria-hidden="true" class="hero-velo"></div>
+
+        <!-- Título -->
+        <div class="hero-contenido">
+            <h1 id="hero-titulo" class="hero-titulo"><span class="hero-marca">Liber</span>: el conocimiento te hace libre</h1>
+        </div>
+    </section>
+
+</main>
+
+<footer class="pie">
+    <div class="pie-contenido">
+        <div class="pie-columnas">
+            <!-- Logo -->
+            <div class="pie-marca">
+                <span role="img" aria-label="Liber" class="logo"><span aria-hidden="true">L</span><span aria-hidden="true" class="logo-cinta"></span><span aria-hidden="true">B</span><span aria-hidden="true">E</span><span aria-hidden="true">R</span></span>
+                <div class="redes">
+                    <!-- Logo: Instagram -->
+                    <a href="#" class="red-instagram"></a>
+                    <!-- logo: X -->
+                    <a href="#" class="red-x"></a>
+                    <!-- Logo: TikTok -->
+                    <a href="#" class="red-tiktok"></a>
+                    <!-- logo:  Facebook -->
+                    <a href="#" class="red-facebook"></a>
+                </div>
+            </div>
+            <nav aria-label="Comprar" class="pie-menu">
+                <h2>Comprar</h2>
+                <div class="pie-menu-enlaces">
+                    <a href="#">Lógica</a>
+                    <a href="#">Novelas rusas</a>
+                    <a href="#">Teatro y poesía</a>
+                    <a href="#">Filosofía</a>
+                </div>
+            </nav>
+            <nav aria-label="Ayuda" class="pie-menu">
+                <h2>Ayuda</h2>
+                <div class="pie-menu-enlaces">
+                    <a href="#">Envíos</a>
+                    <a href="#">Devoluciones</a>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </nav>
+            <nav aria-label="Liber" class="pie-menu">
+                <h2>Liber</h2>
+                <div class="pie-menu-enlaces">
+                    <a href="#">Sobre Liber</a>
+                    <a href="#">Círculo Liber</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Bibliotecas y empresas</a>
+                </div>
+            </nav>
+        </div>
+        <div class="pie-legal">
+            <span>© 2026 Liber. Todos los derechos reservados.</span>
+            <div class="pie-legal-enlaces">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
