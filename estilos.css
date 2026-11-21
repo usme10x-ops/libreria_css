@@ -377,3 +377,225 @@ body {
     color: inherit;
     text-decoration: none;
 }
+
+
+
+.productos-hero,
+.productos-seccion,
+.productos-contacto {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 84px clamp(20px, 4vw, 40px);
+    box-sizing: border-box;
+}
+
+.productos-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    min-height: 480px;
+}
+
+.productos-eyebrow {
+    margin: 0 0 12px;
+    color: #B3261E;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.productos-hero-titulo {
+    max-width: 650px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(46px, 7vw, 78px);
+    font-weight: 500;
+    letter-spacing: -.04em;
+    line-height: .98;
+}
+
+.productos-hero-descripcion {
+    max-width: 500px;
+    margin: 24px 0 30px;
+    color: #514B40;
+    font-size: 18px;
+}
+
+.productos-boton {
+    display: inline-block;
+    padding: 14px 22px;
+    background: #B3261E;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.productos-hero-imagen {
+    flex: 1 1 320px;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    display: block;
+}
+
+.productos-cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.productos-titulo-seccion {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 500;
+    line-height: 1.08;
+}
+
+.productos-introduccion {
+    max-width: 360px;
+    margin: 0;
+    color: #625B4E;
+}
+
+.productos-grid,
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.producto {
+    flex: 1 1 240px;
+    min-width: 0;
+}
+
+.producto-imagen {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    background: #D5CCB6;
+}
+
+.producto-titulo {
+    margin: 16px 0 5px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.producto-descripcion {
+    margin: 0;
+    color: #625B4E;
+}
+
+.productos-servicios {
+    border-top: 1px solid #D5CCB6;
+    border-bottom: 1px solid #D5CCB6;
+    background: #EAE2D2;
+}
+
+.productos-seccion-contenido {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 84px clamp(20px, 4vw, 40px);
+    box-sizing: border-box;
+}
+
+.servicios-grid {
+    gap: 28px;
+    margin-top: 34px;
+}
+
+.servicio {
+    flex: 1 1 220px;
+    padding-top: 20px;
+    border-top: 2px solid #B3261E;
+}
+
+.servicio h3 {
+    margin: 0 0 10px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.servicio p {
+    margin: 0;
+    color: #514B40;
+}
+
+.productos-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.productos-contacto-introduccion {
+    flex: 1 1 240px;
+}
+
+.productos-contacto-texto {
+    color: #514B40;
+}
+
+.productos-contacto-texto a {
+    color: #B3261E;
+}
+
+.productos-formulario {
+    flex: 1 1 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productos-formulario label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.productos-formulario input,
+.productos-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #B9AF9C;
+    border-radius: 0;
+    background: #FFF;
+    color: #1B1A17;
+    font: inherit;
+}
+
+.productos-formulario textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.productos-formulario button {
+    align-self: flex-start;
+    padding: 14px 22px;
+    border: 0;
+    background: #B3261E;
+    color: #FFF;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.productos-formulario-nota {
+    margin: 0;
+    color: #625B4E;
+    font-size: 13px;
+}

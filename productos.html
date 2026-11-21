@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liber: el conocimiento te hace libre</title>
+<meta name="description" content="Liber, librería en línea">
+<meta name="theme-color" content="#1B1A17">
+<!-- Icono de la empresa en la pestaña del navegador -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23B3261E'/%3E%3Cpath d='M29 22H47V60H71L63 69L71 78H29Z' fill='%23F4EEE1'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="encabezado-barra">
+        <a href="#inicio" aria-label="Liber, ir al inicio" class="logo"><span aria-hidden="true">L</span><span aria-hidden="true" class="logo-cinta"></span><span aria-hidden="true">B</span><span aria-hidden="true">E</span><span aria-hidden="true">R</span></a>
+        <audio autoplay loop hidden>
+            <source src="./assets/audio/bach_v1.1.mp3" type="audio/mpeg">
+        </audio>
+        <div role="search" class="busqueda">
+            <label for="busqueda" class="solo-lectores">Buscar libros por título o autor</label>
+            <input id="busqueda" type="search" placeholder="Busca por título o autor" autocomplete="off" class="busqueda-campo">
+            <button type="button" aria-label="Buscar" class="busqueda-boton"></button>
+        </div>
+        <nav aria-label="Cuenta" class="menu-cuenta">
+            <a href="login.html" class="icono-cuenta">Iniciar sesión</a>
+            <a href="#" class="icono-favoritos">Favoritos</a>
+            <a href="#" class="icono-carrito">Carrito (0)</a>
+            <span class="musica">
+                <audio controls autoplay loop title="Pausar o reanudar la música de fondo">
+                    <source src="./assets/audio/bach_v1.2.mp3" type="audio/mpeg">
+                </audio>
+            </span>
+        </nav>
+    </div>
+    <nav aria-label="Navegación principal" class="menu-principal">
+        <a href="liber.html">Inicio</a>
+        <a href="sobre_nosotros.html">Sobre nosotros</a>
+        <a href="#libros">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section id="inicio" aria-labelledby="hero-title" class="productos-hero">
+        <div>
+            <p class="productos-eyebrow">Una librería para descubrir</p>
+            <h1 id="hero-title" class="productos-hero-titulo">Historias que abren nuevos mundos.</h1>
+            <p class="productos-hero-descripcion">Libros para pensar, imaginar y compartir. Encuentra tu próxima lectura entre nuestros clásicos, novelas y libros de ideas.</p>
+            <a href="#libros" class="productos-boton">Explorar libros</a>
+        </div>
+        <img src="./assets/img/photo-1507842217343-583bb7270b66.avif" alt="Estanterías repletas de libros en una librería" class="productos-hero-imagen">
+    </section>
+
+    <section id="libros" aria-labelledby="books-title" class="productos-seccion">
+        <div class="productos-cabecera">
+            <div>
+                <p class="productos-eyebrow">Nuestra selección</p>
+                <h2 id="books-title" class="productos-titulo-seccion">Libros para cada curiosidad</h2>
+            </div>
+            <p class="productos-introduccion">Una muestra de los mundos que puedes encontrar en Liber.</p>
+        </div>
+        <div class="productos-grid">
+            <article class="producto">
+                <img src="./assets/img/photo-1544947950-fa07a98d237f.avif" alt="Libros abiertos y apilados, una invitación a leer" loading="lazy" class="producto-imagen">
+                <h3 class="producto-titulo">Novela y narrativa</h3>
+                <p class="producto-descripcion">Relatos y voces para viajar sin salir de casa.</p>
+            </article>
+            <article class="producto">
+                <img src="./assets/img/photo-1512820790803-83ca734da794.avif" alt="Selección de libros de distintos géneros" loading="lazy" class="producto-imagen">
+                <h3 class="producto-titulo">Clásicos imprescindibles</h3>
+                <p class="producto-descripcion">Obras que siguen despertando preguntas y conversaciones.</p>
+            </article>
+            <article class="producto">
+                <img src="./assets/img/photo-1519682337058-a94d519337bc.avif" alt="Persona leyendo un libro en un espacio tranquilo" loading="lazy" class="producto-imagen">
+                <h3 class="producto-titulo">Filosofía e ideas</h3>
+                <p class="producto-descripcion">Lecturas para comprender el mundo desde nuevas perspectivas.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="servicios" aria-labelledby="services-title" class="productos-servicios">
+        <div class="productos-seccion-contenido">
+            <p class="productos-eyebrow">Más que libros</p>
+            <h2 id="services-title" class="productos-titulo-seccion">Un espacio para lectores</h2>
+            <div class="servicios-grid">
+                <article class="servicio">
+                    <h3>Recomendaciones</h3>
+                    <p>Cuéntanos qué te gusta y te ayudamos a encontrar una lectura para ti o para regalar.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Lecturas para compartir</h3>
+                    <p>Descubre títulos para clubes de lectura, conversaciones y momentos en familia.</p>
+                </article>
+                <article class="servicio">
+                    <h3>Atención cercana</h3>
+                    <p>¿Buscas un libro en particular? Escríbenos y te ayudaremos a encontrarlo.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contact-title" class="productos-contacto">
+        <div class="productos-contacto-introduccion">
+            <p class="productos-eyebrow">Estamos para ayudarte</p>
+            <h2 id="contact-title" class="productos-titulo-seccion">Contáctanos</h2>
+            <div class="productos-contacto-texto">
+                <p>¿Tienes una consulta o quieres una recomendación? Envíanos un mensaje.</p>
+                <p>Correo: <a href="mailto:contacto@liber.com">contacto@liber.com</a></p>
+            </div>
+        </div>
+        <form action="mailto:contacto@liber.com" method="post" enctype="text/plain" class="productos-formulario">
+            <label for="nombre">Nombre
+                <input id="nombre" name="Nombre" type="text" autocomplete="name" required>
+            </label>
+            <label for="correo">Correo electrónico
+                <input id="correo" name="Correo" type="email" autocomplete="email" required>
+            </label>
+            <label for="mensaje">¿En qué podemos ayudarte?
+                <textarea id="mensaje" name="Mensaje" required></textarea>
+            </label>
+            <button type="submit">Preparar mensaje</button>
+            <p class="productos-formulario-nota">Al enviar, se abrirá tu aplicación de correo para completar el envío.</p>
+        </form>
+    </section>
+</main>
+
+<footer class="pie">
+    <div class="pie-contenido">
+        <div class="pie-columnas">
+            <div class="pie-marca">
+                <span role="img" aria-label="Liber" class="logo"><span aria-hidden="true">L</span><span aria-hidden="true" class="logo-cinta"></span><span aria-hidden="true">B</span><span aria-hidden="true">E</span><span aria-hidden="true">R</span></span>
+                <div class="redes">
+                    <a href="#" aria-label="Instagram" class="red-instagram"></a>
+                    <a href="#" aria-label="X" class="red-x"></a>
+                    <a href="#" aria-label="TikTok" class="red-tiktok"></a>
+                    <a href="#" aria-label="Facebook" class="red-facebook"></a>
+                </div>
+            </div>
+            <nav aria-label="Comprar" class="pie-menu">
+                <h2>Comprar</h2>
+                <div class="pie-menu-enlaces">
+                    <a href="#libros">Lógica</a>
+                    <a href="#libros">Novelas rusas</a>
+                    <a href="#libros">Teatro y poesía</a>
+                    <a href="#libros">Filosofía</a>
+                </div>
+            </nav>
+            <nav aria-label="Ayuda" class="pie-menu">
+                <h2>Ayuda</h2>
+                <div class="pie-menu-enlaces">
+                    <a href="#">Envíos</a>
+                    <a href="#">Devoluciones</a>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+            <nav aria-label="Liber" class="pie-menu">
+                <h2>Liber</h2>
+                <div class="pie-menu-enlaces">
+                    <a href="sobre-nosotros.html">Sobre Liber</a>
+                    <a href="#">Círculo Liber</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Bibliotecas y empresas</a>
+                </div>
+            </nav>
+        </div>
+        <div class="pie-legal">
+            <span>© 2026 Liber. Todos los derechos reservados.</span>
+            <div class="pie-legal-enlaces">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
